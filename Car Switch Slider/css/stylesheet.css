@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Comfortaa', cursive;
+}
+.main{
+    margin-top: 30px;
+    width: 60%;
+    position: relative;
+}
+.main .main-main{
+    background:linear-gradient(107.13deg, #053D66 0%, #084E80 92.85%);
+    height: 500px;
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 80px;
+    outline: none;
+    border: none;
+}
+.main .main-main .main-slid .main-top .main-text{
+    padding: 40px;
+}
+.main .main-main .main-slid .main-top .main-text h1{
+    color: white;
+    width: 450px;
+    font-weight: bold;
+}
+.main .main-main .main-slid .main-top .main-text h2{
+    color: white;
+    font-weight: bold;
+    width: 550px;
+    padding-top: 20px;
+}
+.main .main-main .main-slid .main-top .main-text .btn{
+    margin: 40px;
+}
+.main .main-main .main-slid .main-top .main-text .btn button{
+    outline: none;
+    border: none;
+    border-radius: 35px;
+    font-weight: 700;
+    color: white;
+    background-color: #6699ff;
+    width: 450px;
+    padding: 20px 20px;
+    font-size: large;
+}
+.feature{
+    position: absolute;
+    top: 20%;
+    right: 0%;
+    transform: skew(10deg, 0deg);
+}
+.feature .feature-main{
+    width: 800px;
+}
+.feature .feature-main .feature-slider{
+    overflow: hidden;
+    transform: skewX(10deg);
+    border-radius: 265px 40px 65px 60px;
+}
+.feature .feature-main .feature-slider .feature-hold{
+    width: 900px;
+    transform: skewX(-10deg);
+    z-index: 1;
+}
+.feature .feature-main .feature-slider .feature-hold img{
+    width: 900px;
+    object-fit: cover;
+    transform: skewX(-10deg);
+}
+.feature .feature-main .left-arrow{
+    border:1px solid wheat;
+    border-radius: 50px;
+    position: absolute;
+    bottom: 35%;
+    left: -40%;
+}
+.feature .feature-main .right-arrow{
+    border:1px solid wheat;
+    border-radius: 50px;
+    position: absolute;
+    bottom: 35%;
+    left: -20%;
+}
+.feature .feature-main .right-arrow .fal{
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+}
+.feature .feature-main .left-arrow .fal{
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+}
+.feature .feature-main .left-arrow .fal:hover{
+    color: black;
+    border:1px solid wheat;
+    border-radius: 50px;
+    outline:none;
+    font-weight: bold;
+    background-color: white;
+}
+.feature .feature-main .right-arrow .fal:hover{
+    color: black;
+    border:1px solid wheat;
+    border-radius: 50px;
+    font-weight: bold;
+    outline:none;
+    background-color: white;   
+}

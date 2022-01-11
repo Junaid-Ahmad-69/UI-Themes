@@ -1,0 +1,75 @@
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Times New Roman', Times, serif;
+}
+#main{
+    height: 100vh;
+    width: 100%;
+}
+
+h1{
+ background-color: cadetblue;
+    height: 50%;
+    display: block;
+    margin-top:30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+h2
+{
+    margin: 4rem 0 15px 2rem;
+}
+strong
+{
+margin: 4rem 0 0 2rem;
+}
+input[type="radio"]{
+    margin-left: 28px;
+    margin-top: 25px;
+}
+/* input[type='button']
+{
+    position: absolute;
+    left: 65%;
+    color:white;
+    padding: 10px 12px ;
+    background: #4CAF50;
+    font-size: 24px;
+    outline: none;
+    border: none;
+} */
+button{
+    position: absolute;
+    left: 65%;
+    bottom: 12%;
+    color:white;
+    margin-top: 50px;
+    padding: 10px 35px ;
+    background: #4CAF50;
+    font-size: 24px;
+    outline: none;
+    border: none;
+
+}
+.btn2{
+    position: absolute;
+    left: 10%;
+    margin-top: 50px;    
+    color:white;
+    padding: 10px 12px ;
+    background: #4CAF50;
+    font-size: 24px;
+    outline: none;
+    border: none;
+
+}
+#main
+{
+    width: 100%;
+    height: 100%;
+}
+.main2{
+
+}

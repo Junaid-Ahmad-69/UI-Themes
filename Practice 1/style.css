@@ -1,0 +1,220 @@
+*{
+    padding: 0;   
+    margin: 0;
+    font-family: "Lato",sans-serif;
+    font-weight: 600;
+    box-sizing: border-box;
+}
+.container{  
+    padding: 0 15px;
+    max-width: 1170px;
+    margin: auto;
+    width: 100%;
+}
+.navigation1
+{
+    background-color: #ccc;
+    padding:10px 0 10px 0;
+}
+.navigation1 a{
+    font-size: 22px;
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+}   
+.header1 h1{
+    text-align: center;
+}    
+.header1 span{
+    color:red;
+}
+.navigation1 a:hover{
+    background: #aaa;
+    color: black;
+}    
+input[type="text"]
+{
+    border-radius: 2px;
+    color: #333;
+    border:3px solid #1D2B64;
+}
+#text{
+    width: 300px;
+    padding: 5px 20px;
+}
+#btn1{
+    margin-top: 12px;
+    outline: none;
+    border: none;
+    border: 1px solid #1D2B64;
+    color: white;
+    background-color:rgb(87, 160, 211);
+    width: 6rem;
+    height: 2rem;
+}
+#btn1:hover
+{
+    color: black;
+    background-color: white;
+    transition:  all .5s linear;
+}
+.container{
+    position: relative;
+    padding:20px;
+    border: 5px ridge yellowgreen;
+}
+.container .para{
+    width: 80%;
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+}
+.container .person{
+    position: absolute;
+    right:30px;
+    top: 0;
+}
+.container .person img{
+    height: 135px;
+}
+.hero-image{
+    position: relative;
+}
+.hero-image img{
+    width: 100%;
+    height: 350px;
+}
+.hero-image .text{
+    position: absolute;
+    top:40%;
+    left: 40%;
+    color: white;
+}
+.grid-section{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap:25px;
+    padding: 20px 60px;
+    background-color: grey ;
+}
+.grid-section .card{
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background-color: white;
+}
+.grid-section .card strong{
+    color:#233d7b;
+    font-size: 15px;
+}
+.grid-section .card h4{
+    color: #3eb549;
+    font-size: 14px;
+}
+.grid-section .card h5{
+    color: #7b8397;
+    font-weight: 500;
+}
+.grid-section .card .text2{
+    background-color: #b73439;
+    color: white;
+    display: inline;
+    font-size: 15px; 
+    position: absolute; 
+    padding: 4px;
+    top: 0;
+    left: 0;
+}
+.grid-section .card .card-content{
+    padding: 10px;
+    line-height: 20px;
+}
+.grid-section .card .img-holder img{
+    width: 100%;
+    height: 160px;
+    border: 1px solid grey;
+}
+
+.grid-container{
+    background-color:#f2f3f3;
+    padding: 70px;
+}
+.grid-container .grid-headers{
+    line-height: 50px;
+}
+.grid-container .grid-main{
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+.grid-container .grid-main .grid-img img
+{
+    width: 150px;
+}
+.grid-container  .grid-main .grid-content{
+    line-height: 23px;
+}
+.grid-container .grid-main .grid-content a{
+    text-decoration: none;
+    color:#233d7b;
+}
+.grid-container .grid-main .grid-content a:hover{
+    color:#236d9b;
+}
+.grid-container .grid-content {
+    width: 60%;
+}
+.grid-container .grid-main .grid-content{
+    padding: 12px 0 0 25px;
+} 
+.grid1-img img{
+    width: 150px;
+    height: 140px;
+}
+.grid-main .grid-content p{
+    font-size: 12px;
+    color: #7b8397;
+}
+
+
+
+
+
+
+.logo-section{
+    background-color:#f2f3f3;
+}
+.logo-section h3{
+    padding: 15px 0 0 150px;
+    color: #434343;
+    align-items:center;
+    padding-bottom: 30px;
+}
+.logo-section .logo-main .button{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    padding-left: 110px;
+}
+.logo-section .logo-main .button .images p{
+    padding-left:30px;
+    margin-top: 20px;
+    margin-bottom: 50px ;
+
+}
+.logo-section .logo-main img{
+    width: 60px;
+    object-fit: cover;
+}
+.logo-section button{
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    background-color: white;
+    padding: 12px;
+    border: 1px solid #e6e6e6;
+    cursor: pointer;
+}
+.logo-section .logo-main p{
+    color:#233d7b;
+}
+.logo-section .logo-main p:hover{
+    color:#236d9b;
+    cursor: pointer;
+}

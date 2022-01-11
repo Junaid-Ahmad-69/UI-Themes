@@ -1,0 +1,233 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  box-sizing: border-box;
+}
+header {
+  display: flex;
+  align-self: center;
+  justify-content: space-between;
+  background: black;
+}
+header .log h4{
+font-weight: 700;
+font-size: 18px;
+margin:  20px;
+color: aliceblue;
+}
+nav{
+  padding: 20px;
+}
+nav a{
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 18px;
+  margin:  20px;
+  color: aliceblue;
+}
+.container{
+  padding: 0 15px;
+  margin: auto;
+  width: 100%;
+  max-width: 1170px;
+}
+.container .slider{
+  padding-top: 40px;
+  position: relative;
+}
+.container .slider .slider-image img{
+  width: 100%;
+  height: 500px;
+}
+.container .slider .left-arrow{
+  position: absolute;
+  top:45%;
+  left: 0;
+  color: aliceblue;
+  font-size: 40px;
+  padding: 20px;
+}
+.container .slider .right-arrow{
+  position: absolute;
+  top:45%;
+  right: 0;
+  color: aliceblue;
+  font-size: 40px;
+  padding: 20px;
+}
+.container .slider .overlay{
+  position: absolute;
+  top: 45%;
+  left: 36%;
+  font-size: 26px;
+  color: whitesmoke;
+  letter-spacing: -3px;
+}
+.container .slider .overlay span{
+  color: darkturquoise;
+}
+.container .slider  .overlay button{
+  outline: none;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  color: whitesmoke;
+  font-weight: bold;
+  background: darkturquoise;
+}
+.container .slider  .left-arrow:hover{
+  color: black;
+  background-color: whitesmoke;
+}
+.container .slider  .right-arrow:hover{
+  color: black;
+  background-color: whitesmoke;
+}
+.container .card{
+  padding-top: 20px;
+  text-align: center;
+}
+.container .card-main{
+  padding-top: 20px;
+}
+.container .card-main .card-holder{
+  padding-left: 20px;
+}
+.container .card-main img{
+  object-fit: cover;
+  width: 100%;
+}
+.container .card-main .card-holder .card-content h4{
+  padding: 15px;
+  text-align: center;
+}
+.container .arrow{
+  display: flex;
+  justify-content: space-between;
+  margin: 40px;
+}
+.container .arrow .left{
+  background: #f2f3f3;
+  color: #bbb;
+   font-size: 20px;
+   padding: 10px;
+}
+.container .arrow .right{
+  background: #f2f3f3;
+  color: #bbb;
+  font-size: 20px;
+  padding: 10px;
+}
+.container .arrow .left:hover{
+  color: whitesmoke;
+  background: #4CAF50;
+}
+.container .arrow .right:hover{
+  color: whitesmoke;
+  background: #4CAF50;
+}
+.container .card{
+  padding-top: 20px;
+  text-align: center;
+}
+.container .card-main2{
+  padding-top: 20px;
+}
+.container .card-main2 .card-holder2{
+  padding-left: 20px;
+}
+.container .card-main2 img{
+  object-fit: cover;
+  width: 100%;
+}
+.container .card-main2 .card-holder2 .card-content2 h4{
+  padding: 15px;
+  text-align: center;
+}
+.container .arrow1{
+  display: flex;
+  justify-content: space-between;
+  margin: 40px;
+}
+.container .arrow1 .left1{
+  background: #f2f3f3;
+  color: #bbb;
+   font-size: 20px;
+   padding: 10px;
+}
+.container .arrow1 .right1{
+  background: #f2f3f3;
+  color: #bbb;
+  font-size: 20px;
+  padding: 10px;
+}
+.container .arrow1 .left1:hover{
+  color: whitesmoke;
+  background: #4CAF50;
+}
+.container .arrow1 .right1:hover{
+  color: whitesmoke;
+  background: #4CAF50;
+}
+.container .card-fade{
+  padding: 20px;
+}
+.container .card-relati .card-fade img{
+  object-fit: contain;
+  width: 100%;
+  height: 500px;
+}
+.container .card-relati{
+  position: relative;
+}
+.container .card-relati .left-fade3{
+  position: absolute;
+  top:45%;
+  left: 0;
+  font-size: 30px;
+  padding: 20px;
+  color: #aaa;
+}
+.container .card-relati .right-fade3{
+  position: absolute;
+  top:45%;
+  right: 0;
+  font-size: 30px;
+  padding: 20px;
+  color: #aaa;
+}
+.container .card-relati .left-fade3:hover{
+  color: whitesmoke;
+  background-color: #4CAF50;
+}
+.container .card-relati .right-fade3:hover{
+  color: whitesmoke;
+  background-color: #4CAF50;
+}
+.container .lazy{
+padding: 20px 0  20px 20px;
+}
+.container .lazy-rel .arrow5{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+.container .lazy-rel .arrow5 .leftlazy{
+  font-size: 25px;
+  padding: 10px;
+  color: #aaa;
+}
+.container .lazy-rel .arrow5 .rightlazy{
+  font-size: 25px;
+  padding: 10px;
+  color: #aaa;
+}
+.container .lazy-rel .arrow5 .leftlazy:hover{
+  color: #4CAF50;
+  background-color: #bbb;
+}
+.container .lazy-rel .arrow5 .rightlazy:hover{
+  color: #4CAF50;
+  background-color: #bbb;
+}

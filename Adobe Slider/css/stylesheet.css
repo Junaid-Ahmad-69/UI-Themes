@@ -1,0 +1,29 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container .tab-content .row{
+    line-height: 30px;
+}
+.container .tab-content .col-md-6 button{
+    background-color: transparent;
+    color: #747474;
+    border: none;
+    outline: none;
+    border-radius: 18px;
+    padding: 5px;
+    font-weight: 400;
+    font-size: 14px;
+    border: 2px solid #747474;
+}
+.container .tab-content .col-md-6 button:hover{
+    color: white;
+    background-color: #747474;
+}
+.container .tab-content .col-md-6 a{
+    text-decoration: none;
+    color: #1473e6;
+    font-weight: bold;
+    padding-left: 20px;
+}

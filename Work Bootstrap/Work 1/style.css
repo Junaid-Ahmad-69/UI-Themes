@@ -1,0 +1,92 @@
+.table td{
+    width: 250px;
+}
+.container .row .col-sm-4{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: cadetblue;
+    padding: 8px;
+}
+header .logo h3{
+    font-weight: 300;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+    font-size: 18px;
+}
+nav a:hover{
+    color:whitesmoke;
+    text-decoration: none;
+}
+.container{
+    padding: 0 15px ;
+    margin: auto;
+    max-width: 1170px;
+    width: 100%;
+}
+.container .slider{
+    position: relative;
+}
+.container .slider .slider-image .img{
+    width: 10%;
+    object-fit: cover;
+}
+.container .row a:hover{
+    text-decoration: none;
+    color: black;
+}
+.container button{
+    outline: none;
+    border: none;
+}
+.container h1{
+    text-align: center;
+}
+.container .row .text1{
+    padding: 10px 25px; 
+    background-color: #45ac4f;
+    color: white;
+}
+.container .row .text1:hover{
+    color: whitesmoke;
+}
+.container .row p{
+    text-align: justify;
+}
+.container .row .text2 span{
+    color: green;
+}
+.container .row a{
+    color: black;
+    padding: 10px;
+}
+.container .row {
+    position: relative;
+}
+/* .container .row .collapse ul{
+    padding-top: 20px;
+}
+.container .collapse ul li{
+    list-style:none;
+    color: whitesmoke;
+    background-color: #45ac4f;
+    padding: 10px;
+}
+.container .row .collapse .c{
+    position: absolute;
+    top: 50%;
+    left: 22%;
+} */

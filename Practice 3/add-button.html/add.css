@@ -1,0 +1,12 @@
+button{
+    text-align: center;
+    margin: 2rem;
+    padding: 12px 16px;
+    color: white;
+    background-color: yellowgreen;
+}
+#submit{
+    position: absolute;
+    /* bottom: 10; */
+    left: 30%;
+}

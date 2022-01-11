@@ -1,0 +1,307 @@
+:root{
+    --header-back:#24505c;
+    --em:#1797b1;
+    --white:#ffff;
+    --black:#000000;
+    --back-search-bar:#eeeeee;
+    --search-border: #ccc;
+    --creat:#fcb426;
+    --create-shad:#e29703;
+    --btn-outlin:#14849a;
+    --hov:#10697b;
+    --ceate:#333333;
+    --b-ground: #fafafa;
+    --para:#555;
+}
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;;
+}
+.container{
+    padding: 0 15px;
+    margin: auto;
+    max-width: 1170px;
+    width: 100%;
+}
+header .top{
+    text-align: center;
+    padding: 8px;
+}
+header{
+    background-color: var(--header-back);
+    position: sticky;
+    top: 0;
+    z-index:1;
+}
+header .top a{
+    color: var(--white);
+    font-size: 14px;
+    text-decoration: none;
+    padding: 10px;
+}
+header .top em{
+    color: var(--em);
+}
+header .top a:hover{
+    text-decoration: underline;
+}
+.main .main-content .logo img{
+    width: 220px;
+    object-fit: cover;
+}
+header .main{
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--white);
+    padding: 15px;
+}
+header .main .main-content{
+    display: flex;
+}
+header .main .main-content .navigation nav ul li{
+    display: inline-block;
+}
+header .main .main-content .navigation {
+    padding: 6px;
+}
+header .main .main-content .navigation nav ul li a{
+    text-decoration: none;
+    color: var(--black);
+    font-weight: 700;
+    font-size: 17px;
+    padding-left: 10px;
+}
+header .main .main-content .navigation .fal{
+    font-size: 16px;
+    font-weight: bolder;
+    color: var(--black);
+    padding-left:5px;
+}
+header .main .main-content2 .main-fl{
+    display: flex;
+}
+header .main .main-content2 .main-fl .log{
+    margin-top: 3px;
+}
+header .main .main-content2 .main-fl .log a{
+    padding-right:25px;
+    text-decoration: none;
+    color: var(--em);
+    font-weight: 700;
+    font-size: 18px;
+
+}
+header .main .main-content2 .main-fl .put{
+    padding-left: 10px;
+}
+header .main .main-content2 .main-fl .btn button{
+    outline: 1px solid var(--btn-outlin);
+    border: none;
+    color: var(--white);
+    background-color: var(--em);
+    padding: 6px 10px; 
+    font-size: 17px;
+    border-radius: 5px;
+}
+header .main .main-content2 .main-fl .btn button:hover{
+    background-color: var(--hov);
+    outline: 1px solid var(--black);
+}
+header .main .main-content2 .put input[type=text]{
+    padding: 6px 25px;
+    color: var(--search-border);
+    font-style: italic;
+    border-radius: 5px;
+    border: 2px solid var(--search-border);
+    outline: none;
+    width: 260px;
+}
+header .main .main-content2 .put input[type=text]:focus{
+    background-color: var(--white);
+    outline: none;
+    border: 2px solid var(--em);
+    color: var(--black);
+}
+header .main .main-content2 .put .fal{
+    border: 2px solid var(--search-border);
+    padding: 7px;
+    background-color: var(--back-search-bar);
+    color: var(--em);
+    font-weight: bold;
+    border-radius: 5px;
+}
+.section .section-main{
+    position: relative;
+}
+.section .section-main .section-holder img{
+    width: 100%;
+    object-fit: cover;    
+}
+.section .section-main .text{
+    position: absolute;
+    top: 26%;
+    left: 10%;
+}
+.section .section-main .text2{
+    line-height: 40px;
+}
+.section .section-main .text span{
+    font-size: 44px;
+    color: var(--white);
+    font-weight: 600;
+}
+.section .section-main .text .put1{
+    padding-top: 30px;
+}
+.section .section-main .text .put1 input[type=text]{
+    padding: 6px 25px;
+    color: var(--search-border);
+    border-radius: 5px;
+    font-size: 16px;
+    border: 2px solid var(--search-border);
+    outline: none;
+    width: 95%;   
+    height: 57px;
+}
+.section .section-main .text .put1 input[type=text]:focus{
+    background-color: var(--white);
+    outline: none;
+    border: 2px solid var(--em);
+    color: var(--black);
+}
+.section .section-main .text .put1 .fal{
+    position: absolute;
+    right: 5.2%;
+    top: 70%;
+    border: 2px solid var(--search-border);
+    background-color: var(--back-search-bar);
+    color: var(--em);
+    font-size: 18px;
+    padding: 17px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.info{
+    position: absolute;
+    width: 100%;
+    bottom: -17%;
+    background-color: var(--ceate);
+}
+.info .container .info-main{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+.info .container .info-main .info-acct{
+    padding-left: 10px;
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 600;
+}
+.info .container .info-main .inpt{
+    padding-left: 20px;
+}
+.info .container .info-main .inpt input[type=text]{
+    font-size: 18px;
+    padding: 6px 12px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    border: 2px  solid var(--search-border);
+}
+.info .container .info-main .inpt input[type=text]:focus{
+    border: 2px solid var(--em);
+    color: var(--black);
+}
+.info .container .info-main .inpt2{
+    padding-left: 20px;
+}
+.info .container .info-main .inpt2 select{
+    font-size: 16px;
+    padding: 7px 12px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    border: 2px solid var(--search-border);
+    width: 240px;
+}
+.info .container .info-main .btn-crat{
+    padding-left: 20px;
+}
+.info .container .info-main .btn-crat button{
+    font-size: 18px;
+    padding: 6px 12px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    border: 2px  solid var(--create-shad);
+    color: var(--white);
+    background-color: var(--creat);
+    font-weight: 600;
+}
+.cards{
+    background-color: var(--b-ground);
+}
+.cards .container .card-main{
+    padding-top: 200px;
+}
+.cards .container .card-main .card-content{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 40px;
+}
+.cards .container .card-main .card-content .card-hold{
+    border: 1px solid var(--back-search-bar);
+}
+.cards .container .card-main .card-content .card-hold .sty{
+    text-align: center;
+    padding: 15px;
+    background-color: var(--white);
+}
+.cards .container .card-main .card-content .card-hold .sty a{
+    text-decoration: none;
+    color: var(--em);
+    font-size: 28px;
+}
+.cards .container .card-main .card-content .card-hold img{
+    width: 100%;
+    object-fit: cover;
+}
+.cards .container .card-main .card-content .card-hold .deta{
+    text-align: center;
+    padding: 15px;
+    color: var(--para);
+    background-color: var(--white);
+}
+.cards .container .card-main .card-content .card-hold .inpt3{
+   margin: 20px;
+}
+.cards .container .card-main .card-content .card-hold .inpt3 select{
+    font-size: 16px;
+    padding: 7px 12px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    border: 2px solid var(--search-border);
+    width: 320px;  
+}
+.cards .container .card-main .card-content .card-hold .deta1{
+    padding: 40px 80px;
+}
+.cards .container .card-main .card-content .card-hold .deta1 a{
+    text-decoration: none;
+    display: block;
+    color: var(--em);
+}
+.cards .container .card-main .card-content .card-hold .deta1 .far{
+    color: var(--em);
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 10px;
+}
+.cards .container .card-main .card-content .card-hold .deta1 a:hover{
+    color: var(--black);
+    text-decoration: underline;
+}

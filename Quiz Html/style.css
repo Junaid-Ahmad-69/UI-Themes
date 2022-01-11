@@ -1,0 +1,328 @@
+:root{
+    --gree-light:#3bb18f;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --green: #28a745;
+    --success: #28a745;
+    --white: #fff;
+    --light: #f8f9fa;
+    --dark: #262729;
+    --vl:#dddddd;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto" , sans-serif;
+}
+.vl{
+    border-right: 1px solid var(--vl);
+}
+header {
+    display: flex;
+    position: sticky;
+    top: 0;
+    background-color: wheat;
+    justify-content: space-around;
+    padding: 10px;
+}
+header .navbar{
+    margin: 10px;
+}
+nav a{
+    text-decoration: none;
+    padding:20px;
+    margin: 15px;
+    color: black;
+}
+nav a:hover{
+    color: var(--success);
+}
+.container{
+    padding: 0 15px;
+    margin: auto;
+    max-width: 1170px;
+    width: 100%;
+}
+.container .container-slider{
+    position: relative;
+    /* padding-top: 20px; */
+    z-index: -1;
+}
+.container .container-slider .con-image img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+.container .overlay{
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    font-size: 30px;
+    text-align: center;
+    color: var(--white);
+    font-weight: 800;
+    z-index: 1;
+}
+/* .container .container-slider.con-image{
+    position: relative;
+} */
+/* .container .container-slider .arrow{
+    position: absolute;
+    color: black;
+    top: 50%;
+    right: 0;
+    z-index: 333;
+} */
+.left-arrow{
+    position: absolute;;
+    top: 50%;
+    right: 0;
+    font-size: 30px;
+    color: #6c757d;
+    padding: 10px;
+}
+.right-arrow{
+    position: absolute;;
+    top: 50%;
+    left: 0;
+    font-size: 30px;
+    color: #6c757d;
+    padding: 10px;
+}
+.right-arrow:hover, .left-arrow:hover{
+    background-color: #dddddd;
+}  
+.container .container-slider .overlay h2{
+    color: var(--light);
+}
+.container .overlay .span2{
+    color: red;
+}
+.container .overlay .span1{
+    color: var(--gree-light);
+}
+.container .card{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 20px;
+}
+.container  .card .card-main{
+    padding-top: 20px;
+}
+.container .card .card-main .image img{
+    width: 100%;
+    object-fit: cover;
+}
+.container3{
+    padding-top: 20px;
+}
+.container3 .footer{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    background-color: var(--dark);
+}
+.container3 .footer .footer-main{
+    padding: 20px;
+}
+.container3 .footer .footer-main .text h3{
+    color: var(--light);
+    text-align: center;
+}
+.container3 .footer .footer-main .text-foot  ul li{
+    list-style-type: none;
+    padding-top: 10px;
+    text-align: center;
+}
+.container3 .footer .footer-main .text-foot ul li a{
+    text-decoration: none;
+    color: var(--white);
+    font-size: 12px;
+}
+
+/* 2listing css  start */
+.container .col-main {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 20px;
+    padding-top: 20px;
+}
+.container .col-main .col-card{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.container .col-main .col-card img{
+    width: 100%;    
+    object-fit: contain;
+}
+.container .col-main .col-card h4{
+    padding: 20px;
+
+}
+
+
+/* 2listing css end  */
+
+
+
+/* detailpage css start  */
+.container{
+    padding-top:25px;
+}
+.container .detail{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 20px;
+    border: 1.5px solid #dddddd;
+}
+.container .detail  .detail-main img{
+    width: 100%;
+    object-fit: cover;
+}
+.container .detail .detail-text h2{
+    padding: 15px;
+}
+.container .detail .detail-text p{
+    text-align: justify;
+    padding: 15px;
+}
+/* detailpage css end  */
+
+
+/* aboutpage css start  */
+.container .about .about-main{
+    height: 350px;
+}
+.container .about .about-main .feature{
+padding-top: 20px;
+}
+.container .about .about-main .feature-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding-top:50px;
+}
+.container .about .feature-banner{
+    display: flex;
+    justify-content: center;
+}
+.container .about .feature-banner .icons{
+    padding:20px;
+    font-size: 25px;
+}
+.container .about .feature-banner .head{
+    padding:20px;
+    line-height: 25px;
+}
+.container .about .feature-banner .head h5{
+    color: var(--gray);
+}
+.container .about .about-main .feature-banner .icons{
+    color: var(--dark); 
+}
+/* aboutpage css end  */
+
+
+
+/* contactpage css start */
+.container .label-text{
+    font-size:20px;
+    font-weight: bold;
+}
+.container .main-content{
+    box-shadow: 10px 10px 16px 15px rgba(0,0,0,0.2);
+}
+input[type="text"]{
+    width: 50%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    color: var(--gray);
+    background-color: var(--vl);
+    border-bottom: 3px solid var(--green);
+}
+#select{
+    width: 50%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    color: var(--gray);
+    background-color: var(--vl);
+    border-bottom: 3px solid var(--green);  
+}
+.container h2{
+    padding: 20px;
+    color: var(--success);
+}
+ input[type="submit"]
+{
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    color: var(--white);
+    background-color: var(--gree-light);
+    padding: 10px 25px;
+    width: 24%;
+    margin-bottom: 20px;
+}
+input[type="reset"]
+{
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    color: var(--white);
+    background-color: var(--gree-light);
+    padding: 10px 25px;
+    width: 24%;
+    margin-bottom: 20px;
+}
+.container .main-content .gid-for{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding-left: 25px;
+}
+.container .main-content .gid-for .grid-section{
+    padding-left: 20px;
+}
+.container .main-content .btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 25px;
+}
+
+
+
+
+/* contactpage css end  */
+
+
+
+
+
+
+
+
+
+/* Media Query For Responsive*/
+@media screen and (max-width:768px) {
+nav{
+    display: none;
+}
+.container .card {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.container .card .card-main .image img{
+    object-fit: contain;
+}
+}
+
+@media screen and (max-width:400px){
+    .container .overlay{
+        position: absolute;
+        top: 40%;
+        left: 25%;
+    }
+    .container .card .card-main .image img{
+        margin-bottom: 40px;
+    }
+}

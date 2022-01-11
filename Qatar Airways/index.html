@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books Flights-Book & Fly From Pakistan</title>
+    <link rel="stylesheet" href="/css/stylesheet.css">
+    <link rel="stylesheet" href="/js/script.js">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Popper JS -->  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- fonts-Cdn -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <!-- Shanti Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shanti&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="holder holder-shadow">
+            <img src="/images/plane.jpg" alt="plain">
+            <div class="text">
+                <h1>63 weekly flights from Pakistan</h1>
+                <p>Seamless connection to over 140 destinations</p>
+                <button>Book Now</button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="logo"> 
+                <img src="/images/logo-white.svg" alt="logo">
+                <img src="/images/white.svg" alt="">
+            </div>
+            <div class="nav-bar">
+                <div class="left-nav">
+                    <ul>
+                        <li><a href="#">Explore</a></li>
+                        <li><a href="#">Book</a></li>
+                        <li><a href="#">Experience</a></li>
+                        <li><a href="#">Privilege Club</a></li>
+                    </ul>
+                </div>
+                <div class="right-nav">
+                    <ul>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#" class="fal fa-search"></a></li>
+                        <li><a href="#"><img src="/images/pk.png" alt="flag pak"> EN</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="signup">
+                <i class="fal fa-user-circle"></i>
+                <span>Login | Sign up</span>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="crd">
+            <div class="crd-main">
+                <ul class="nav">
+                    <li class="nav-items"><a class="nav-link active" data-toggle="tab" href="#Book"><i class="fal fa-plane"></i> Book</a></li>
+                    <li class="nav-items"><a class="nav-link" data-toggle="tab" href="#My"><i class="fal fa-suitcase"></i> MyTrip</a></li>
+                    <li class="nav-items"><a class="nav-link" data-toggle="tab" href="#Check"><i class="fal fa-check-circle"></i> Check-in</a></li>
+                    <li class="nav-items"><a class="nav-link" data-toggle="tab" href="#Flight"><i class="fal fa-map-marker-alt"></i> Flight status</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div id="Book" class="tab-pane active">
+                        <div class="con">
+                            <h5>Book Your Ticket From US$14</h5>
+                            <input type="text" placeholder="From" class="ques">
+                            <input type="text" placeholder="To" class="ques">
+                            <select id="trip" style="border: 1px solid rgb(200, 200, 200);">
+                                <option disabled selected value="Return">Return</option>
+                                <option value="One Way">One Way</option>
+                                <option value="Multi-City">Multi-City</option>
+                            </select>
+                            <input name="date" type="date" >
+                            <input type="text" placeholder="1 Passenger, Economy">
+                        </div>                       
+                        <div class="con2">
+                            <a href="#"> + Add Promo code </a>
+                            <button> Show Flights <i class="fas fa-plane-departure"></i> </button>
+                        </div>
+                    </div>
+                    <div id="My" class=" tab-pane fade show" >
+                        <div class="con">
+                            <h5>Manage your upcoming trip</h5>
+                            <input type="text" placeholder="Booking reference" name="book"  style="width: 320px;">
+                            <input type="text" placeholder="Last Name" style="width: 320px;">
+                            <button> Retrive Booking </button>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade show" id="Check" >
+                        <div class="con">
+                            <h5>Check in for your flight at your convience</h5>
+                            <input type="text" placeholder="Booking reference" name="book"  style="width: 320px;">
+                            <input type="text" placeholder="Last Name" style="width: 320px;">
+                            <button> Check-in</button>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade show" id="Flight">
+                        <div class="con">
+                            <h5>Search for Qatar Airways flight status</h5>
+                            <input type="text" placeholder="From / Flight number " name="book"  style="width: 220px;">
+                            <input type="text" placeholder="To" style="width: 240px;">
+                            <select name="date" id="date" style="border:1px solid  rgb(200, 200,200); width: 220px;">
+                                <option value="01">01 January</option>
+                                <option value="02">02 January</option>
+                                <option value="03">03 January</option>
+                                <option value="04">04 January</option>
+                                <option value="05">05 January</option>
+                                <option value="06">06 January</option>
+                                <option value="07">07 January</option>
+                                <option value="08">08 January</option>
+                            </select>
+                            <button style="width: 280px;"> Search flights</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="travel">
+            <h2>Travel Safety with us</h2>
+            <p>As one of the largest and most experienced global airlines throughout the COVID-19 crisis, you can rely on us to take you on your next journey safely. </p>
+            <div class="travel-cont">
+                <div class="travel-back">
+                    <div class="travel-hold">
+                        <img src="/images/safty.jpg" alt="safety travel">
+                        <div class="content">
+                            <div class="lik">
+                                <a href="#">Safety measure</a>
+                            </div>
+                            <div class="lik-icon">
+                                <i class="far fa-angle-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="travel-back">
+                    <div class="travel-hold">
+                        <img src="/images/plan.jpg" alt="safety travel">
+                        <div class="content">
+                            <div class="lik">
+                                <a href="#">Plan your next trip</a>
+                            </div>
+                            <div class="lik-icon">
+                                <i class="far fa-angle-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="travel-back">
+                    <div class="travel-hold">
+                        <img src="/images/gurantee.jpg" alt="safety travel">
+                        <div class="content">
+                            <div class="lik">
+                                <a href="#">Guranteed flexibility</a>
+                            </div>
+                            <div class="lik-icon">
+                                <i class="far fa-angle-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="travel-back">
+                    <div class="travel-hold">
+                        <img src="/images/travel.jpg" alt="safety travel">
+                        <div class="content">
+                            <div class="lik">
+                                <a href="#">Travel and entry requirement</a>
+                            </div>
+                            <div class="lik-icon">
+                                <i class="far fa-angle-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="latest">
+            <h2>Our Latest flight deals</h2>
+            <div class="both">
+                <div class="enter">
+                    <label for="for">From</label>
+                    <input type="text" placeholder="Lahore LHR">
+                    <i class="fas fa-pencil-alt"></i>
+                </div>
+                <div class="price">
+                    <span>Best Price Gurantee</span>
+                    <a href="#"><img src="/images/bpg.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="limit">
+            <div class="limit-back">
+                <div class="limit-hold">
+                    <img src="/images/newyork.jpg" alt="new york" height="490px">
+                    <div class="content-york">
+                        <h3>New York</h3>
+                        <div class="time">
+                            <p>19 Jan 2022 - 24 Jan 2022</p>
+                        </div>
+                            <p>Economy from</p>
+                            <h5>PKR 22071</h5>
+                    </div>
+                    <div class="ban">
+                        <button>Limited time only</button>
+                    </div>
+                    <div class="overlay">
+                        <div class="overlay-main">
+                            <div class="overlay-text">
+                                <h3>New York</h3>
+                                <p> 19 Jan 2022 - 24 Jan 2022</p>
+                            </div>
+                            <div class="bth">
+                                <button>Book Now</button>
+                            </div>
+                            <div class="overlay-text">
+                                <h3>Economy from</h3>
+                                <p>PKR 220271</p>
+                            </div>
+                            <div class="bth1 ">
+                                <button>Discover</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="limit-both ">
+                <div class="limit-back">
+                    <div class="limit-hold">
+                        <img src="/images/huston.jpg" alt="new york">
+                        <div class="content-york">
+                            <h3>Houston</h3>
+                            <div class="time">
+                                <p>21 Jan 2022 - 26 Jan 2022</p>
+                            </div>
+                            <p>Economy from</p>
+                            <h5>PKR 256363</h5>
+                        </div>
+                        <div class="ban">
+                            <button>Limited time only</button>
+                        </div>
+                        <div class="overlay1">
+                            <div class="overlay-main1">
+                                <div class="overlay-text1">
+                                    <h3>Houston</h3>
+                                    <p>21 Jan 2022 - 26 Jan 2022</p>
+                                </div>
+                                <p>Economy</p>
+                                <h5>PKR 256363</h5>
+                                <div class="bth-1">
+                                    <button> Book Now</button>
+                                </div>
+                                <div class="bth-2">
+                                    <button> Discover</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="limit-back mt-3">
+                    <div class="limit-hold">
+                        <img src="/images/melburane.jpg" alt="new york">
+                        <div class="content-york">
+                            <h3>Melbourne</h3>
+                            <div class="time">
+                                <p>22 Feb 2022 - 28 Feb 2022</p>
+                            </div>
+                            <p>Economy from</p>
+                            <h5>PKR 219485</h5>
+                        </div>
+                        <div class="ban">
+                            <button>Limited time only</button>
+                        </div>
+                        <div class="overlay1">
+                            <div class="overlay-main1">
+                                <div class="overlay-text1">
+                                    <h3>Melbourne</h3>
+                                    <p>22 Feb 2022 - 28 Feb 2022</p>
+                                </div>
+                                <p>Economy</p>
+                                <h5>PKR PKR 219485</h5>
+                                <div class="bth-1">
+                                    <button> Book Now</button>
+                                </div>
+                                <div class="bth-2">
+                                    <button> Discover</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="limit-both">
+                <div class="limit-back">
+                    <div class="limit-hold">
+                        <img src="/images/dullas.jpg" alt="new york">
+                        <div class="content-york">
+                            <h3>Dallas</h3>
+                            <div class="time">
+                                <p>08 Apr 2022 - 13 Apr 2022</p>
+                            </div>
+                            <p>Economy from</p>
+                            <h5>PKR 234939</h5>
+                        </div>
+                        <div class="ban">
+                            <button>Limited time only</button>
+                        </div>
+                        <div class="overlay1">
+                            <div class="overlay-main1">
+                                <div class="overlay-text1">
+                                    <h3>Dallas</h3>
+                                    <p>08 Apr 2022 - 13 Apr 2022</p>
+                                </div>
+                                <p>Economy</p>
+                                <h5>PKR 234939</h5>
+                                <div class="bth-1">
+                                    <button> Book Now</button>
+                                </div>
+                                <div class="bth-2">
+                                    <button> Discover</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="limit-back mt-3">
+                    <div class="limit-hold">
+                        <img src="/images/montrean.jpg" alt="new york">
+                        <div class="content-york">
+                            <h3>Montreal</h3>
+                            <div class="time">
+                                <p>14 Feb 2022 - 01 Mar 2022</p>
+                            </div>
+                            <p>Economy from</p>
+                            <h5>PKR 187054</h5>
+                        </div>
+                        <div class="ban">
+                            <button>Limited time only</button>
+                        </div>
+                        <div class="overlay1">
+                            <div class="overlay-main1">
+                                <div class="overlay-text1">
+                                    <h3>Montreal</h3>
+                                    <p>14 Feb 2022 - 01 Mar 2022</p>
+                                </div>
+                                <p>Economy</p>
+                                <h5>PKR 187054</h5>
+                                <div class="bth-1">
+                                    <button> Book Now</button>
+                                </div>
+                                <div class="bth-2">
+                                    <button> Discover</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="limit2">
+            <div class="limit-back2">
+                <div class="limit-hold2">
+                    <img src="/images/washtion dc.jpg" alt="new york" height="150px" >
+                    <div class="content-york2">
+                        <h3>Washington, D.C.</h3>
+                        <div class="time2">
+                            <p>21 Jan 2022 - 26 Jan 2022</p>
+                        </div>
+                            <p>Economy from</p>
+                            <h5>PKR 181980</h5>
+                    </div>
+                    <div class="ban2">
+                        <button>Limited time only</button>
+                    </div>
+                    <div class="overlay2">
+                        <div class="overlay-main2">
+                            <div class="overlay-text2">
+                                <h3>Washington, D.C.</h3>
+                                <p>21 Jan 2022 - 26 Jan 2022</p>
+                            </div>
+                            <div class="bth2">
+                                <button>Book Now</button>
+                            </div>
+                            <div class="overlay-text2">
+                                <h3>Economy from</h3>
+                                <p>PKR  181980</p>
+                            </div>
+                            <div class="bth-3 ">
+                                <button>Discover</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="limit-back2">
+                <div class="limit-hold2">
+                    <img src="/images/seattle.jpg" alt="new york"  height="150px">
+                    <div class="content-york2">
+                        <h3>Seattle</h3>
+                        <div class="time2">
+                            <p>17 Feb 2022 - 04 Mar 2022</p>
+                        </div>
+                            <p>Economy from</p>
+                            <h5>PKR 154919</h5>
+                    </div>
+                    <div class="ban2">
+                        <button>Limited time only</button>
+                    </div>
+                    <div class="overlay2">
+                        <div class="overlay-main2">
+                            <div class="overlay-text2">
+                                <h3>Seattle</h3>
+                                <p>17 Feb 2022 - 04 Mar 2022</p>
+                            </div>
+                            <div class="bth2">
+                                <button>Book Now</button>
+                            </div>
+                            <div class="overlay-text2">
+                                <h3>Economy from</h3>
+                                <p>PKR 154919</p>
+                            </div>
+                            <div class="bth-3 ">
+                                <button>Discover</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>        
+        </div>
+    </div>
+    <div class="container">
+        <div class="view">
+            <button>View More fares</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="slider">
+            <ul class="nav">
+                <li class="nav-items"><a class="nav-link active" data-toggle="tab" href="#Pri">Privilege Club</a> </li>
+                <li class="nav-items"><a class="nav-link" data-toggle="tab" href="#world">World's Best Airline for the sixth time</a> </li>
+                <li class="nav-items"><a class="nav-link" data-toggle="tab" href="#Mobile">Mobile App</a> </li>
+                <li class="nav-items"><a class="nav-link" data-toggle="tab" href="#Student">Student Club</a> </li>
+            </ul>
+        </div>
+    </div>
+    <div class="tab-content">
+        <div  id="Pri" class="tab-pane active">
+            <div class="join">
+                <img src="/images/nav1.jpg" alt="join our Privilege">
+                <div class="join-text">
+                    <h2>Join Privilege Club</h2>
+                    <p>Enjoy exclusive offers and earn Qmiles to use towards award tickets, upgrades, extra baggage, shopping at Qatar Duty Free and more.</p>
+                    <div class="join-bto">
+                        <button>Join now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="world" class="tab-pane fade show" >
+            <div class="join">
+                <img src="/images/nav2.jpg" alt="join our Privilege">
+                <div class="join-text">
+                    <h2>World's Best Airline</h2>
+                    <p>We are proud to be the only airline to receive this award from Skytrax for the sixth time. Thank you for voting for us.</p>
+                    <div class="join-bto">
+                        <button>Learn more</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="Mobile" class="tab-pane fade show" >
+            <div class="join">
+                <img src="/images/nav3.jpg" alt="join our Privilege">
+                <div class="join-text">
+                    <h2>Get more on our mobile app</h2>
+                    <p>Benefit from app-exclusive offers, personalised notifications, seamless booking functions, journey tracking and more.</p>
+                    <div class="join-bto">
+                        <button>Learn more</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="Student" class="tab-pane fade show" >
+            <div class="join">
+                <img src="/images/nav4.jpg" alt="join our Privilege">
+                <div class="join-text">
+                    <h2>Student Club</h2>
+                    <p>Join Student Club and enjoy an exclusive programme developed specifically with you in mind, offering you unparalleled opportunities, savings and more.</p>
+                    <div class="join-bto">
+                        <button>Join Today</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  
+    <div class="container">
+        <div class="let">
+            <div class="let-main">
+                <h1>Let's go places together </h1>
+                <div class="let-para">
+                    <p>Discover the latest offers and news and start planning your next trip with us.</p>
+                </div>
+                <div class="let-grd">
+                    <div class="let-back">
+                        <div class="let-hold">
+                            <img src="/images/fly.jpg" alt="">
+                            <div class="let-content">
+                                <h3>Fly further with VISA</h3>
+                                <p>Enjoy up to 12% off and up to 3,000 Bonus Qmiles</p>
+                                <div class="let-btn">
+                                    <button>Book now</button>
+                                </div>      
+                            </div>
+                        </div>
+                    </div>
+                    <div class="let-back2">
+                        <div class="let-2grd">
+                            <div class="stophere">
+                                <img src="/images/stop.jpg" alt="stop">
+                            </div>
+                            <div class="stop-content">
+                                <h3>Stopover in Qatar</h3>
+                                <div class="para-stop">
+                                    <p>The World's Best Value Stopover starting from $14* </p>
+                                </div>
+                                <div class="stop-lik">
+                                    <a href="#"> Learn More <i class="fal fa-angle-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="let-2grd">
+                            <div class="stophere">
+                                <img src="/images/to.jpg" alt="stop">
+                            </div>
+                            <div class="stop-content">
+                                <h3>Fly to 230+ cities in USA</h3>
+                                <div class="para-stop">
+                                    <p>Great fares and seamless connections with our partners </p>
+                                </div>
+                                <div class="stop-lik">
+                                    <a href="#"> Book now <i class="fal fa-angle-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="let-2grd">
+                            <div class="stophere">
+                                <img src="/images/test.jpg" alt="stop">
+                            </div>
+                            <div class="stop-content">
+                                <h3>Test your knowledge with Student Club games</h3>
+                                <div class="para-stop">
+                                    <p>Participate and show us what you have got  </p>
+                                </div>
+                                <div class="stop-lik">
+                                    <a href="#"> Play now <i class="fal fa-angle-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="comp">
+            <h2>Complete your journey</h2>
+            <div class="comp-para">
+                <p>Upgrade or save up to 20% when you purchase extra baggage, lounge access or meet and assist services online to make your journey even more memorable.</p>
+            </div>
+            <div class="comp-gd">
+                <div class="comp-back">
+                    <div class="comp-hold">
+                        <img src="/images/up.jpg" alt="upgrade">
+                        <div class="comp-cont">
+                            <div class="comp-text">
+                                <p>Upgrade to premium</p>
+                            </div>
+                            <div class="comp-icon">
+                                <i class="fal fa-angle-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="comp-back">
+                    <div class="comp-hold">
+                        <img src="/images/ex.jpg" alt="upgrade">
+                        <div class="comp-cont">
+                            <div class="comp-text">
+                                <p>Upgrade to premium</p>
+                            </div>
+                            <div class="comp-icon">
+                                <i class="fal fa-angle-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="comp-back">
+                    <div class="comp-hold">
+                        <img src="/images/lg.jpg" alt="upgrade" height="155px">
+                        <div class="comp-cont">
+                            <div class="comp-text">
+                                <p>Upgrade to premium</p>
+                            </div>
+                            <div class="comp-icon">
+                                <i class="fal fa-angle-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="comp-back">
+                    <div class="comp-hold">
+                        <img src="/images/al.jpg" alt="upgrade">
+                        <div class="comp-cont">
+                            <div class="comp-text">
+                                <p>Upgrade to premium</p>
+                            </div>
+                            <div class="comp-icon">
+                                <i class="fal fa-angle-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>   
+    <div class="container">
+        <div class="nev">
+            <div class="nev-hold">
+                <img src="/images/nl.png" alt="perosn">
+                <div class="nev-content">
+                    <h3>Never miss an offer</h3>
+                    <div class="nev-para">
+                        <p>Subscribe and be the first to receive our exclusive offers.</p>
+                    </div>
+                    <div class="inpt">
+                        <input type="text" placeholder="Email address">
+                        <input type="text" placeholder="Preferred city of departure">
+                    </div>
+                    <div class="check">
+                        <input type="checkbox">
+                        <label for="check">Yes, I would like to receive news and offers from Qatar Airways.</label>
+                    </div>
+                </div>
+                <div class="sub">
+                    <button>Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-hold">
+            <img src="/images/footer2.svg" alt="footer" class="col">
+        </div>
+    </div>
+    <div class="foot2">
+        <div class="foot2-main">
+            <div class="footer-grd">
+                <div class="container">
+                    <div class="foot2-grd">
+                        <div class="foot2-content">
+                            <h3>Qatar Airways</h3>
+                            <li><a href="#">About us </a></li>
+                            <li><a href="#">Awards </a></li>
+                            <li><a href="#">Careers </a></li>
+                            <li><a href="#">Press release  </a></li>
+                            <li><a href="#">Sponsorship </a></li>
+                            <li><a href="#">Travel alerts </a></li>
+                            <li><a href="#">Al Darb Qatarisation</a></li>
+                            <li><a href="#">Environment sustainability</a></li>
+                        </div>
+                        <div class="foot2-content">
+                            <h3>Group companies</h3>
+                            <li><a href="#">Hamad International Airport </a></li>
+                            <li><a href="#">Qatar Executive </a></li>
+                            <li><a href="#">Qatar Duty Free </a></li>
+                            <li><a href="#">Qatar Airways Cargo</a></li>
+                            <li><a href="#">More about Group companies </a></li>
+                        </div>
+                        <div class="foot2-content">
+                            <h3>Business solutions</h3>
+                            <li><a href="#">Corporate travel </a></li>
+                            <li><a href="#">Beyond Business</a></li>
+                            <li><a href="#">QMICE Meetings and Events</a></li>
+                        </div>
+                        <div class="foot2-content">
+                            <h3>Business partners</h3>
+                            <li><a href="#">Affiliate markeing </a></li>
+                            <li><a href="#">e-Procurement </a></li>
+                            <li><a href="#">Trade partners </a></li>
+                        </div>
+                        <div class="foot2-content">
+                            <h3>Contact us</h3>
+                            <li><a href="#"> Help</a></li>
+                        </div>
+                    </div>
+                </div>
+                <div class="the">
+                    <div class="logo-the">
+                        <img src="/images/Theqa_.svg" alt="">
+                    </div>
+                    <div class="face">
+                        <p>Let's stay connected</p>
+                        <div class="face-icons">
+                            <button><i class="fab fa-facebook"></i></button>
+                            <button><i class="fab fa-twitter"></i></button>
+                            <button><i class="fab fa-linkedin"></i></button>
+                            <button><i class="fab fa-youtube"></i></button>
+                            <button><i class="fab fa-instagram"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="air">
+        <div class="container">
+            <div class="air-grd">
+                <div class="air-main">
+                    <div class="air-hold">
+                        <img src="/images/air1.svg" alt="">
+                    </div>
+                    <div class="air-content">
+                        <p>Airline of the Year for the sixth time</p>  
+                    </div>
+                </div>
+                <div class="air-main">
+                    <div class="air-hold">
+                        <img src="/images/air2.svg" alt="">
+                    </div>
+                    <div class="air-content">
+                        <p>World Best Business Class Airline</p>  
+                    </div>
+                </div>
+                <div class="air-main">
+                    <div class="air-hold">
+                        <img src="/images/air3.svg" alt="">
+                    </div>
+                    <div class="air-content">
+                        <p>5-Star COVID-19 Airline Safety Rating</p>  
+                    </div>
+                </div>
+            </div>
+            <div class="up">
+                <button><i class="fal fa-angle-up"></i></button>
+            </div>
+        </div>
+            <div class="container">
+                <div class="last-na">
+                    <div class="last-both">
+                        <ul>
+                            <li><a href="#">Cookie policy</a></li>
+                            <li><a href="#">Legal</a></li>
+                            <li><a href="#">Privacy</a></li>
+                            <li><a href="#">Accessibility</a></li>
+                            <li><a href="#">Combating human trafficking</a></li>
+                            <li><a href="#">Cookie Consent</a></li>
+                        </ul>
+                    </div>
+                    <div class="right">
+                        Qatar Airways.All rights reversed
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- Jquery CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<!-- Script File  -->
+    <script src="/js/script.js"></script>
+</body>
+</html>

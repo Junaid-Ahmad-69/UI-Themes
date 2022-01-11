@@ -1,0 +1,60 @@
+ .grid {
+    width: 600px;
+    height: 500px;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 10px 50px 50px 50px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+}
+h1 {
+    font-family: "sans-serif";
+    background-color: #4CAF50;
+    font-size: 40px;
+    text-align: center;
+    color: #ffffff;
+    padding: 2px 0px;
+    
+} 
+#score {
+    color: #4CAF50;
+    text-align: center;
+    font-size: 30px;
+}
+.grid #question {
+    font-family: "monospace";
+    font-size: 22px;
+    color: black;
+}
+.buttons {
+    margin-top: 60px;
+}
+#btn0, #btn1, #btn2, #btn3 , #btn-add {
+    background-color: #4CAF50;
+    width: 250px;
+    font-size: 20px;
+    color: #fff;
+    margin: 10px 40px 20px 0px;
+    padding: 10px 10px;
+}
+ 
+#btn0:hover, #btn1:hover, #btn2:hover, #btn3:hover {
+    cursor: pointer;
+    background-color: #fff;
+    color: black;
+}
+ 
+#btn0:focus, #btn1:focus,#btn-add:focus, #btn2:focus, #btn3:focus {
+    outline: 0;
+}
+ 
+#progress {
+    color: #2b2b2b;
+    font-size: 18px;
+}
+#btn-add{
+    position: relative;
+    top: 80px;
+    left: 50%;
+}
